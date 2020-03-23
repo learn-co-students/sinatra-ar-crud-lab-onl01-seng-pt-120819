@@ -18,12 +18,12 @@ class ApplicationController < Sinatra::Base
 
   get 'articles' do 
     @articles = Article.all 
+    binding.pry
 
     erb :index
   end
 
   get 'articles/:id' do 
-    binding.pry
     @article = Article.find(params[:id])
     erb :show
   end
