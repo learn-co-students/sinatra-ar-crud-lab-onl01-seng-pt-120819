@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<h1>Selected Article: <%= @wanted_article.title %></h1>
+<p>Content: <%= @wanted_article.content %></p>
+
+<form action="/articles/<%= @wanted_article.id%>" method="POST">
+  <input id="hidden" type="hidden" name="_method" value="PATCH">
+  <h3>New Title: <input type="text" name="title"></h3>
+  <h3>New Content: <input type="text" name="content"></h3>
+  <input id="submit" type="submit">
+</form>
