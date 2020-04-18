@@ -1,0 +1,12 @@
+body {
+    background-color: aqua !important;
+    height: 500px;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+    height: 80%;
+}
